@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+*,
+*::before,
+*::after {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+*::selection{
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+
+html {
+  font-family: system-ui,-apple-system,system-ui,BlinkMacSystemFont,SF Pro Text,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #FFA500;
+  --secondary-color:rgba(255, 170, 2, 0.25);
+  --secondary-blue-color:rgba(59, 130, 255, 0.13);
+  --primary-font-color: #fdfdfd;
+  --background-color: #171717;
+}
+
+
+hr {
+  width: 100%;
+  border: 0.5px solid var(--font-paragraph-color);
+
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  overflow-wrap: break-word;
+}
+
+section {
+  margin: 128px auto;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.container,
+.container-m {
+  width: 100%;
+  padding: 0 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  min-height: 20px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color); 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ddd;
+}
+
+/* container infrastracture. */
+@media (min-width: 480px) {
+
+  .container,
+  .container-m {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-m {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
